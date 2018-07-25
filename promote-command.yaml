@@ -2,7 +2,7 @@ namespace: screwdriver-cd-test
 name: promote-test
 description: |
    Test command for promote
-maintainer: foo@bar.com
+maintainer: foo@example.com
 version: "1.0"
 format: binary
 binary:

@@ -16,9 +16,9 @@ jobs:
     steps:
       - publish: sd-cmd publish -f promote-command.yaml -t stable
 
-  publish-test:
+  publish-latest:
     steps:
-      - publish: sd-cmd publish -f promote-command.yaml -t test
+      - publish: sd-cmd publish -f promote-command.yaml
 
   promote:
     steps:
