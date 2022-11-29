@@ -1,0 +1,11 @@
+# Namespace for the command
+namespace: screwdriver-cd-test
+# Command name itself
+name: publish-test
+# Description of the command and what it does
+description: command for testing for publish
+# Major and Minor version number (patch is automatic)
+version: "0.1"
+# Format the command is in (see below for examples)
+# Valid options: habitat, docker, binary
+format: invalid-option

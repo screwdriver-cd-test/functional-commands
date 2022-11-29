@@ -26,3 +26,20 @@ jobs:
     steps:
       - promote: sd-cmd promote screwdriver-cd-test/promote-func-test 1.0.1 stable
       - release: sd-cmd promote screwdriver-cd-test/promote-func-test stable GA
+
+  validate-valid:
+    steps:
+      - sd-cmd validate -f binary-command.yaml
+
+  validate-invalid:
+    steps:
+      - sd-cmd validate -f sd-invalid-command.yaml
+
+  publish-trusted:
+    steps:
+      - sd-cmd publish -f sd-trusted-command.yaml
+
+  publish-distrusted:
+    steps:
+      - sd-cmd publish -f sd-distrusted-command.yaml
+
